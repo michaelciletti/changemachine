@@ -1,5 +1,5 @@
 require "sinatra"
-
+require_relative 'cashregister.rb'
 enable :sessions
 
 get "/" do
