@@ -7,8 +7,8 @@ class TestCashregister < Minitest::Test
 		assert_equal({:Pennies=>1}, makechange(1))
 	end
 
-	def test_cr_pass_82_returns_2Q_2D_2N_2P
+	def test_cr_pass_67_returns_2Q_1D_1N_2P
 		assert_equal({:Quarters=>2, :Dimes=>1, :Nickels=>1, :Pennies=>2}, makechange(67))
 	end
-	
+
 end
