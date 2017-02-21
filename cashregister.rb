@@ -11,11 +11,11 @@
 # VALUES = {:Quarters => 25,:Dimes => 10,:Nickels =>  5,:Pennies =>  1,}
 
 def makechange(amount, values = {:Quarters => 25, :Dimes => 10, :Nickels =>  5, :Pennies =>  1,})
-  change = {}  
+  total = {}  
   values.each{|coin, value|
     num, amount = amount.divmod(value)
-    change[coin] = num if num > 0}
-  return change
+    total[coin] = num if num > 0}
+  return total
 end
  
  
