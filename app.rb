@@ -8,8 +8,8 @@ end
 
 post "/change_display" do
 	total = params[:change_input].to_i
-	session[:total] = total
-	erb :display, :locals => {:total => session[:total]}
+	returned_change = makechange(total)
+	erb :display, :locals => {:total => returned_change}
 end
 
 
